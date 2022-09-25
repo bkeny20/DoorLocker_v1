@@ -1,10 +1,10 @@
 #define ping_Pin 13
 #define echo_Pin 12
+#define Servo_Pin 1
 
 #include <Servo.h> 
 
 
-#define Servo_Pin 1
 Servo s;
 int done = 1;
 void setup() {
@@ -33,8 +33,6 @@ void loop() {
 
 //---------------------------------------------------------------
 
-   Serial.println(distance);
-
    //---Will turn this block into "Lock" function----------------
    if(distance > 10)
     done = 0;
@@ -59,4 +57,3 @@ void loop() {
 //------------------------------------------------------------------
 
 }
-
