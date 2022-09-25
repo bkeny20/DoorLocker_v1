@@ -3,7 +3,7 @@
 #define Servo_Pin 1
 
 #include <Servo.h> 
-// meow
+
 
 Servo s;
 int done = 1;
